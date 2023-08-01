@@ -28,7 +28,7 @@ export default {
             <button class="btn" v-on:click="createRows(10000)">
                 create 10000
             </button>
-            <button class="btn" v-on:click="createRows(10000)">
+            <button class="btn" v-on:click="addRows(10000)">
                 add 10000
             </button>
             <button class="btn" v-on:click="removeRows()">
