@@ -1,6 +1,9 @@
 <template>
     <div class="app">
-        <Menu v-bind="{createRows, addRows, removeRows}"/>
+        <Menu
+            v-bind="{createRows, addRows, removeRows}"
+              :number-of-rows="numberOfRows"
+        />
         <table class="table">
             <tbody>
                 <Row

@@ -4,7 +4,8 @@ export default {
     props: {
         createRows:Function,
         addRows: Function,
-        removeRows: Function
+        removeRows: Function,
+        numberOfRows: Number,
     },
 }
 </script>
@@ -13,6 +14,9 @@ export default {
     <div class="menu">
         <div class="framework">
             <h1>Framework: Vue3</h1>
+        </div>
+        <div class="row-count">
+            <p>total number of rows: {{numberOfRows}}</p>
         </div>
         <div class="button-container">
             <button class="btn" v-on:click="createRows(1000)">
