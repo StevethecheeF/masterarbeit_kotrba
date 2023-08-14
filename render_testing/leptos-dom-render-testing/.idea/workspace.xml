@@ -7,32 +7,13 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cbcb34b-9689-403b-b01a-3d2b3fca4994" name="Changes" comment="">
+    <list default="true" id="8ac32212-f767-46ee-9d2c-1f2d7f8eb2f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/menu.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/masterarbeit_kotrba.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/end2end/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/end2end/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/end2end/playwright.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/end2end/tests/example.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/rust-toolchain.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/src/app.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/src/lib.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/rust-webapp/style/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rust_project/testing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +24,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="riym329i" />
+    <option name="directoryName" value="tugnruyv" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2TFIJDVUiSbW3eZ8GDz1sOkqOtn" />
+  <component name="ProjectId" id="2TfkcRNwhwkPNQpd3QgupG7kLck" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,9 +39,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true"
+    "last_opened_file_path": "/home/stevethecheef/Desktop/Uni_Master/Masterarbeit/masterarbeit_kotrba/render_testing/leptos-dom-render-testing/src",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.disableDetachedFileInspection/home/stevethecheef/Desktop/Uni_Master/Masterarbeit/masterarbeit_kotrba/render_testing/leptos-dom-render-testing/src/components/menu.rs": "true",
+    "org.rust.disableDetachedFileInspection/home/stevethecheef/Desktop/Uni_Master/Masterarbeit/masterarbeit_kotrba/render_testing/leptos-dom-render-testing/src/menu.rs": "true",
+    "settings.editor.selected.configurable": "language.rust.cargo.check"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run" />
@@ -85,12 +78,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9cbcb34b-9689-403b-b01a-3d2b3fca4994" name="Changes" comment="" />
-      <created>1690632331194</created>
+      <changelist id="8ac32212-f767-46ee-9d2c-1f2d7f8eb2f7" name="Changes" comment="" />
+      <created>1691441601739</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1690632331194</updated>
+      <updated>1691441601739</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

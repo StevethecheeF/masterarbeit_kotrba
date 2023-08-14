@@ -31,14 +31,56 @@ pub fn App(cx: Scope) -> impl IntoView {
 #[component]
 fn HomePage(cx: Scope) -> impl IntoView {
     // Creates a reactive value to update the button
-    let (count, set_count) = create_signal(cx, 0);
-    let on_click = move |_| set_count.update(|count| *count += 1);
+    let (number_of_rows, set_rows) = create_signal(cx, 0);
+    let (data, set_data) = create_signal(cx, vec![{}]);
+
+    let build_rows = move |amount: &usize, current_length: usize| -> Vec<()> {
+        let mut return_array = vec![{}; *amount];
+
+        for i in 0..(*amount) {
+            let a = [];
+            return_array.push(
+                object! {
+                id: (i+current_length),
+                label: format!("label {}",(i+current_length))
+            }
+            )
+        }
+        return return_array;
+    };
+
+    let add_rows = move |amount: usize| {
+        let mut tmp_data = data.get();
+        let mut  new_rows = build_rows(&amount,tmp_data.len());
+        tmp_data.append(&mut new_rows);
+
+        set_rows(amount);
+        set_data(tmp_data);
+    };
+
+    let add_1000_rows = move |_| {
+        let amount = 1000;
+        add_rows(amount);
+    };
+
+    let add_10000_rows = move |_| {
+        let amount = 10000;
+        add_rows(amount);
+    };
+
 
     view! { cx,
         <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Click Me: " {count}</button>
+        <button on:click=add_1000_rows>"Add 1000"</button>
+        <button on:click=add_10000_rows>"Add 10000"</button>
+        <div>
+            <a> {number_of_rows}</a>
+        </div>
+
     }
 }
+
+
 
 /// 404 - Not Found
 #[component]
