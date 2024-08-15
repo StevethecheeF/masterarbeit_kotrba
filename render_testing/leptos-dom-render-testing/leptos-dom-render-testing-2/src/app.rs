@@ -32,9 +32,8 @@ pub fn App() -> impl IntoView {
     let add_rows = move |amount: usize| {
         let mut tmp_data = data.get();
         let mut  new_rows = build_rows(&amount,&tmp_data.len());
-        tmp_data.append(&mut new_rows);
-        set_number_of_rows(tmp_data.len());
-        set_data(tmp_data);
+        set_number_of_rows(number_of_rows.get() + amount);
+        set_data.update(|value| value.append(&mut new_rows));
     };
 
     let create_rows = move |amount:usize| {
