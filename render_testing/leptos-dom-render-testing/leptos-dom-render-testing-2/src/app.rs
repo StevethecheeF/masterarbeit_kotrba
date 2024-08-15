@@ -17,11 +17,11 @@ pub fn App() -> impl IntoView {
         let mut return_array: Vec<ArrayStruct> = vec![];
 
         for i in 0..(*amount) {
-            let temptemp = format!("label {}",(&i+current_length));
+            let tmp_label = format!("label {}",(&i+current_length));
             return_array.push( ArrayStruct
             {
                 id: (&i+current_length),
-                label: temptemp,
+                label: tmp_label,
             }
             );
         }
