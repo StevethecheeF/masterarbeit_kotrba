@@ -34,6 +34,15 @@ export default class App extends Component{
         })
     }
 
+    updateRows = ()=>{
+		this.setState(prevState=> {
+			return {
+				...prevState,
+				data: prevState.data.map(item=> {return {id:item.id,label:item.label+"updated"}}),
+			};
+		});
+    }
+
     removeRows = ()=>{
         this.setState({
             numberOfRows: 0,
@@ -43,19 +52,20 @@ export default class App extends Component{
 
     render() {
         return(
-        <div className="app">
+        <div>
             <Menu
                 create={this.createRows}
                 add={this.addRows}
                 remove={this.removeRows}
+                update={this.updateRows}
                 count={this.state.numberOfRows}
                 key={this.state.numberOfRows}
             />
-            <table className="table">
+            <table id="table">
                 <tbody>
                     {this.state.data.map((item)=>(
                         <Row
-                            key={item.id}
+                            key={item.label}
                             id={item.id}
                             label={item.label}
                         />

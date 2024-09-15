@@ -8,7 +8,7 @@ export default class Row extends Component{
         return (
             <tr>
                 <td> {this.id} </td>
-                <td className="col-md-4"> {this.label} </td>
+                <td> {this.label} </td>
             </tr>
         );
     }
