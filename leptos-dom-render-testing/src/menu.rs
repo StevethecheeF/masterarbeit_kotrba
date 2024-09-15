@@ -72,7 +72,7 @@ pub fn Menu(
 				<button id="add-10000" on:click=add_10000_rows>
 					add 10000
 				</button>
-				<button id="remove" on:click=update_rows>
+				<button id="update" on:click=update_rows>
 					update all
 				</button>
 				<button id="remove" on:click=remove_rows>
