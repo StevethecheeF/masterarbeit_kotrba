@@ -1,8 +1,7 @@
-# masterarbeit_kotrba
+# masterarbeit_kotrba - render testing
 
-## rust_project
-Within this folder everything for rust is placed.
+This repository holds projects for the render testing part of my master thesis.
 
-### rust_webapp
-The actual webapp written in rust.
-See [Readme](https://github.com/StevethecheeF/masterarbeit_kotrba/blob/main/rust_project/rust-webapp/README.md)
+In the sup-directories the represented frameworks implementations of a dummy project are done. 
+Each project creates a simple page that can add or remove elements to a table.  
+
