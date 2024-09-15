@@ -11,7 +11,6 @@ pub fn Menu(
 	set_number_of_rows:WriteSignal<usize>,
 	set_data: WriteSignal<Vec<ArrayStruct>>
 ) -> impl IntoView {
-	// function that builds a number of rows and returns them
 	let build_rows = |amount: usize, current_length: usize| -> Vec<ArrayStruct> {
 		let mut return_array = Vec::with_capacity(amount); // Pre-allocate space
 
@@ -26,7 +25,6 @@ pub fn Menu(
 		return_array
 	};
 
-	// function that adds a number of rows to the data
 	let add_rows = move |amount: usize| {
 		let mut new_rows = build_rows(amount.clone(), number_of_rows.get());
 		set_number_of_rows.update(|number_of_rows| *number_of_rows += amount);
@@ -38,8 +36,10 @@ pub fn Menu(
 		set_number_of_rows(amount);
 	};
 
+	let update_rows = move |_| {
+		set_data.update(|data| data.iter_mut().for_each(|item| item.label = "changed".to_string()));
+	};
 
-	// remove rows handler
 	let remove_rows = move |_| {
 		set_data(vec![]);
 		set_number_of_rows(0)
@@ -71,6 +71,9 @@ pub fn Menu(
 				</button>
 				<button id="add-10000" on:click=add_10000_rows>
 					add 10000
+				</button>
+				<button id="remove" on:click=update_rows>
+					update all
 				</button>
 				<button id="remove" on:click=remove_rows>
 					remove all

@@ -17,7 +17,7 @@ pub fn App() -> impl IntoView {
             <tbody>
                 <For
                     each=data
-                    key=|entry| entry.id
+                    key=|entry| (entry.id,entry.label.clone())
                     let:child
                 >
                     <Row key=child.id label=child.label />
