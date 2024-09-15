@@ -36,12 +36,17 @@ export class AppComponent {
 		this.data = this.data.concat(newRows)
 	}
 
+	updateRows(){
+		this.data.forEach(item => item.label += "changed")
+	}
+
 	removeRows(){
 		this.data = [];
 		this.numberOfRows = 0;
 	}
 
+
 	trackByFn(index: any,item:{id:number,label:string}) {
-		return item.id;
+		return [item.id,item.label];
 	}
 }

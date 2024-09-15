@@ -11,4 +11,5 @@ export class MenuComponent {
 	@Input() addRows!: Function;
 	@Input() createRows!: Function;
 	@Input() removeRows!: Function;
+	@Input() updateRows!: Function;
 }
