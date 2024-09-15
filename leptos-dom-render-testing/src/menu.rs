@@ -37,7 +37,7 @@ pub fn Menu(
 	};
 
 	let update_rows = move |_| {
-		set_data.update(|data| data.iter_mut().for_each(|item| item.label = "changed".to_string()));
+		set_data.update(|data| data.iter_mut().for_each(|item| item.label += "changed"));
 	};
 
 	let remove_rows = move |_| {

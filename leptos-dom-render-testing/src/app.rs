@@ -13,7 +13,7 @@ pub fn App() -> impl IntoView {
 			set_number_of_rows=set_number_of_rows
 			set_data=set_data
 		/>
-        <table>
+        <table id="table">
             <tbody>
                 <For
                     each=data
