@@ -1,0 +1,15 @@
+<div>
+    <app-menu [numberOfRows]="numberOfRows"
+              [addRows]="addRows.bind(this)"
+              [removeRows]="removeRows.bind(this)"
+              [createRows]="createRows.bind(this)"
+    />
+    <table id="table">
+        <tbody>
+            <tr *ngFor="let item of data; trackBy:trackByFn"
+                app-row
+                [label]="item.label"
+                [key]="item.id"></tr>
+        </tbody>
+    </table>
+</div>

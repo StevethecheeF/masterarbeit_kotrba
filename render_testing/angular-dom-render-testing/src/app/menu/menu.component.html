@@ -1,0 +1,25 @@
+<div>
+    <div>
+        <h1>Framework: Angular</h1>
+    </div>
+    <div>
+        <p>total number of rows: {{ numberOfRows }} </p>
+    </div>
+    <div>
+        <button id="create-1000" (click)="createRows(1000)">
+            create 1000
+        </button>
+        <button id="add-1000" (click)="addRows(1000)">
+            add 1000
+        </button>
+        <button id="create-10000" (click)="createRows(10000)">
+            create 10000
+        </button>
+        <button id="add-10000" (click)="addRows(10000)">
+            add 10000
+        </button>
+        <button id="remove" (click)="removeRows()">
+            remove all
+        </button>
+    </div>
+</div>
