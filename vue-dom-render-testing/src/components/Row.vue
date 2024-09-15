@@ -13,8 +13,8 @@ export default {
 
 <template>
     <tr>
-        <td class="small-col" > {{$props.id}} </td>
-        <td class="big-col"> {{$props.label}} </td>
+        <td> {{$props.id}} </td>
+        <td> {{$props.label}} </td>
     </tr>
 </template>
 
