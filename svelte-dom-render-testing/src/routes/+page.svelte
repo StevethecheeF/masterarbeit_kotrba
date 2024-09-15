@@ -25,6 +25,11 @@
 		data = tempData.concat(newRows)
     }
 
+	function updateRows(){
+		data.forEach(item => item.label += "changed")
+        data = data
+    }
+
 	function removeRows(){
 		data = [];
 		numberOfRows = 0;
@@ -37,11 +42,12 @@
               addRows={addRows}
               createRows={createRows}
               removeRows={removeRows}
+              updateRows={updateRows}
         />
         <table id="table">
             <tbody>
             {#each data as entry}
-                <Row key={entry.key} label={entry.label} />
+                <Row key={entry.id} label={entry.label} />
             {/each}
             </tbody>
         </table>

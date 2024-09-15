@@ -3,6 +3,7 @@
 	export let createRows;
 	export let addRows;
 	export let removeRows;
+	export let updateRows;
 </script>
 <div>
     <div>
@@ -23,6 +24,9 @@
         </button>
         <button id="add-10000" on:click={addRows(10000)}>
             add 10000
+        </button>
+        <button id="update" on:click={updateRows}>
+            update all
         </button>
         <button id="remove" on:click={removeRows}>
             remove all
