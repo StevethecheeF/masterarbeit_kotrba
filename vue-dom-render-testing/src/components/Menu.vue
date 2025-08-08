@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div>
-        <div>
+        <div id="framework">
             <h1>Framework: Vue</h1>
         </div>
         <div>
