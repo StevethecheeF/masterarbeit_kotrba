@@ -1,0 +1,7 @@
+{
+	"port": 3012,
+	"server": {
+		"baseDir": "./dist/angular/browser"
+	},
+	"startPath": "/index.html"
+}
